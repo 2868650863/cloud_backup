@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listshow</title>
+    <style>
+        /* 设置按钮样式 */
+        button {
+            font-size: 24px;
+            /* 调整字体大小 */
+            padding: 15px 30px;
+            /* 调整内边距，增大按钮大小 */
+            background-color: #4CAF50;
+            /* 按钮背景色 */
+            color: white;
+            /* 按钮文字颜色 */
+            border: none;
+            /* 去掉边框 */
+            border-radius: 8px;
+            /* 设置圆角 */
+            cursor: pointer;
+            /* 鼠标悬停时显示为手型 */
+        }
+
+        /* 鼠标悬停时的按钮样式 */
+        button:hover {
+            background-color: #45a049;
+            /* 改变背景色 */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>查看下载备份文件</h1>
+    <button onclick="sendGetRequest()"> 加载</button>
+
+    <script>
+        function sendGetRequest() {
+            // 直接将浏览器的页面加载到指定的URL
+            window.location.href = "http://47.115.60.56:8080/";
+        }
+    </script>
+</body>
+
+</html>
